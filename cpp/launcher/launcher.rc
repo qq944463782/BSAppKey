@@ -1,0 +1,8 @@
+#include "resource.h"
+
+// 使用数值，避免 RC 不识别 LANG_NEUTRAL 等宏（未包含 winres.h 时会报 RC2144）
+// 9,1 = LANG_ENGLISH, SUBLANG_ENGLISH_US（0x0409），与加壳工具 UpdateResource 检测一致
+LANGUAGE 9, 1
+
+IDR_EMBED_PUBLIC RCDATA "embedded\\public.blb"
+IDR_EMBED_PAYLOAD RCDATA "embedded\\payload.exe"

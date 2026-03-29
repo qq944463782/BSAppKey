@@ -1,0 +1,12 @@
+[package]
+name = "bl_pack"
+version = "0.1.0"
+edition = "2021"
+description = "Placeholder for future PE packer / stub (see README)"
+
+[[bin]]
+name = "bl_pack"
+path = "src/main.rs"
+
+[dependencies]
+clap = { version = "4.5", features = ["derive"] }
